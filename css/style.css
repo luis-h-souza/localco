@@ -5,7 +5,17 @@
   padding: 0;
   scroll-behavior: smooth;
 }
-
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg1);
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: var(--color-primary);
+}
 :root {
   --color-primary: #fc6648;
   --color-gradient: linear-gradient(to bottom, #d94c30, #fc8971);
@@ -19,8 +29,70 @@
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
+/* Background */
+
 body {
   background-color: var(--color-bg1);
+}
+
+.bg {
+  position: relative;
+}
+
+.bg-gray {
+  width: 100%;
+  height: 1100px;
+  position: absolute;
+  z-index: -10;
+  top: -125px;
+}
+
+/* UTILITÁRIOS */
+
+.h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 4.5rem;
+  font-weight: 600;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  color: var(--color-text);
+}
+
+.h2 {
+  letter-spacing: 3px;
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.h3 {
+  color: var(--color-primary);
+  letter-spacing: 8px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 20px;
+  text-align: center;
+}
+
+.h4 {
+  color: var(--color-text1);
+  letter-spacing: 3px;
+  font-size: 1.25rem;
+  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 40px;
+}
+
+.divisor {
+  color: var(--color-primary);
+  width: 100px;
+  border-width: 3px;
+  opacity: 1;
+  margin-top: 40px;
+  text-align: center;
 }
 
 .divisor-header {
@@ -30,6 +102,7 @@ body {
 }
 
 /* Formatação do HEADER */
+
 .logoPC {
   height: 80px;
 }
@@ -80,6 +153,7 @@ body {
 }
 
 /* Botão de contato */
+
 .contato {
   background-image: linear-gradient(to right, #d94c30, #fc8971) !important;
   border: var(--color-primary);
@@ -106,14 +180,6 @@ body {
 }
 
 /* Formatação da SEÇÃO 02 - Baner CTA */
-
-.h1 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 4.5rem;
-  font-weight: 600;
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-  color: var(--color-text);
-}
 
 .cta-primary {
   color: var(--color-primary);
@@ -153,49 +219,8 @@ body {
   border: var(--color-primary);
 }
 
-/* Background */
-.bg {
-  position: relative;
-}
 
-.bg-gray {
-  width: 100%;
-  height: 1100px;
-  position: absolute;
-  z-index: -10;
-  top: -125px;
-}
-
-/* FORMATAÇÃO DA SEÇÃO 02 - O QUE É */
-
-.h3 {
-  color: var(--color-primary);
-  letter-spacing: 8px;
-  font-size: 1.5rem;
-  font-weight: 500;
-  font-family: 'Poppins', sans-serif;
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-top: 20px;
-  text-align: center;
-}
-
-.h2 {
-  letter-spacing: 3px;
-  font-size: 2.5rem;
-  font-weight: 600;
-  font-family: 'Poppins', sans-serif;
-  margin-top: 40px;
-  text-align: center;
-}
-
-.divisor {
-  color: var(--color-primary);
-  width: 100px;
-  border-width: 3px;
-  opacity: 1;
-  margin-top: 40px;
-  text-align: center;
-}
+/* Formatação da Seção 02 - O QUE É */
 
 .style-text {
   color: var(--color-primary);
@@ -209,33 +234,86 @@ body {
   font-size: 1rem;
 }
 
-.h4 {
-  color: var(--color-text1);
-  letter-spacing: 3px;
-  font-size: 1.25rem;
-  font-weight: 300;
-  font-family: 'Poppins', sans-serif;
-  margin-top: 40px;
-}
-
-
 .galery-oq-img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  
 }
 
 .oq-img {
-  height: 260px;
+  height: 250px;
   width: auto;
   border-radius: 18px 72px 18px 18px;
+  box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*Media Querry*/
+
+@media screen and (max-width: 1399px) {
+  .oq-img {
+    width: 40%;
+    height: auto;
+    margin-top: 20px;
+  }
+}
+
+/* Formatação da seção 03 - INFRA */
+
+.section-Tres-infra {
+  margin: 180px 0;
+}
+
+.infra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0;
+  border-right: 1px solid var(--color-seta);
+  padding: 0 25px;
+}
+
+.infra:nth-child(4) {
+  border-right: none;
+}
+
+.infra, .h5 {
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: var(--color-text);
+  text-align: center;
+  
+}
+
+.infra, .text-description {
+  color: var(--color-text);
+  font-size: 0.875rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.infra img {
+  height: 60px;
+  margin: 20px 0;
+}
+
+.infra, .oq-img:hover {
+  transform: scale(1.1);
+}
+
+/* Formatação da seção 04 - SOBRE */
+
+.section-Quatro-sobre {
+
+}
+.carrossel-color {
+  color: var(--color-primary) !important;
 }
 
 
-/* Formatação do nosso espaço */
-
+/* Formatação da página O Nosso Espaço */
 
 .container-fluid {
   padding: 0 !important;
@@ -258,12 +336,11 @@ body {
   transform: translateY(-70%);
   left: 70%;
   border-radius: 20px;
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
   background-position: 50% 50%;
   background-size: cover;
   z-index: 100;
   transition: 1s;
-  border: 1px solid var(--color-primary);
 }
 
 .carousel .list .item:nth-child(1),
@@ -428,8 +505,8 @@ body {
   border: none;
   outline: none;
   font-size: 16px;
-  font-family: monospace;
-  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
   transition: .5s;
   cursor: pointer;
 }
@@ -501,124 +578,12 @@ body {
   }
 }
 
+/* Formatação da página Nossos Planos */
 
-
-/* Formatação da seção 03 INFRA */
-
-.section-Tres-infra {
-  margin-top: 180px;
-}
-
-.infra {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 40px 0;
-  border-right: 1px solid var(--color-seta);
-  padding: 0 25px;
-}
-
-.infra:nth-child(4) {
-  border-right: none;
-}
-
-.infra, .h5 {
-  font-size: 1.5rem;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  color: var(--color-text);
-  text-align: center;
-  
-}
-
-.infra, .text-description {
-  color: var(--color-text);
-  font-size: 0.875rem;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  text-align: center;
-}
-
-.infra img {
-  height: 60px;
-  margin: 20px 0;
-}
-
-.oq-img {
-  height: 260px;
-  margin: 10px;
-  box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.infra, .oq-img:hover {
-  transform: scale(1.1);
-}
-
-/* Formatação da seção 04 - SOBRE */
-
-.section-Quatro-sobre {
-  background-image: url("../assets/img/oq-recepcao.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 900px;
-}
-
-.section-Quatro-sobre, 
-.h2, 
-.h3, 
-.divisor {
-  z-index: 1;
-
-}
-
-
-
-
-/* Formatação do Blog */
-
-.date {
-  font-family: "Poppins", sans-serif;
-  color: var(--color-primary);
-  padding-top: 20px;
-  font-weight: 300;
-  font-style: italic;
-}
-.content-blog {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.title-blog {
-  font-family: "Poppins", sans-serif;
-  color: var(--color-text);
-}
-
-.post-content {
-  font-family: "Questrial", sans-serif;
-  padding: 0 0 20px 15px;
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
-  border-radius: 24px;
-  margin: 20px 0;
-  color: var(--color-text1);
-  background-color: var(--color-bg);
-}
-
-.img-blog{
-  
-  width: 150px;
-  
-  
-}
-
-
-/* Formatação dos Planos */
-
-
-h1{
+.titulo{
   font-size: 2.5rem;
   font-weight: 900;
   text-transform: uppercase;
-  margin-top: 2em;
   margin-bottom: 0;
 }
 
@@ -629,7 +594,9 @@ h1{
 .fs-500{
   font-size: 1.3125rem;
   margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
+
 .mb{
   margin-bottom: 0.5em;
 }
@@ -645,11 +612,17 @@ h1{
   width: 16.5rem;
   padding: 2em;
   border-radius: 1em;
-  margin: 0 0.5em 1em;
+  margin: 1em;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.plan:hover {
+  transform: scale(1.1);
+  background-color: var(--color-bg);
 }
 
 .plan--light{
-  color: #fc8971;
+  color: var(--color-text);
   background: linear-gradient(-45s, #656565, #393e45);
 }
 
@@ -658,8 +631,8 @@ h1{
 }
 
 .plan--light .btn{
-  color: #fc8971;
-  background: #25D366;
+  color: var(--color-bg);
+  background: var(--color-whatsapp);
 }
 
 .plan--accent{
@@ -668,7 +641,7 @@ h1{
 }
 
 .plan--accent .btn{
-  color: #fc8971;
+  color: var(--color-bg);
   background: #25D366;
 }
 
@@ -693,12 +666,13 @@ h1{
 .plan-descricao{
   margin: 2em 0;
   line-height: 1.5;
+  font-family: 'Questrial', sans-serif;
 }
 
 .btn{
   display: inline-block;
   padding: 0.5em 0.75em;
-  border-radius: 0.25em;
+  border-radius: 0.5em;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
@@ -722,4 +696,45 @@ h1{
 .btn--dark{
   color: #25D366;
   background: #d94c30;
+}
+
+/* Formatação do Blog */
+
+data {
+  font-family: "Poppins", sans-serif;
+  color: var(--color-primary);
+  padding: 10px;
+  font-weight: 300;
+}
+
+.content-blog {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.title-blog {
+  font-family: "Poppins", sans-serif;
+  color: var(--color-text);
+  font-size: 1.5rem;
+}
+
+.post-content {
+  font-family: "Questrial", sans-serif;
+  padding: 0 0 20px 15px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+  margin: 20px 0;
+  color: var(--color-text1);
+  background-color: var(--color-bg);
+}
+
+.img-blog{
+  height: 450px;
+  width: auto;
+  justify-content: center;
+}
+
+.text-blog {
+  color: var(--color-text);
+  font-family: 'Questrial', sans-serif;
 }

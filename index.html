@@ -59,16 +59,14 @@
         </nav>
         <hr class="divisor-header">
       </header>
-
     </div>
 
     <main class="cta my-5">
-
       <section class="section-Um-cta">
 
         <div class="container title-section">
           <div class="row d-flex align-items-center">
-            <div class="col-md-6 cta-title" data-aos="fade-right" data-aos-duration="500"
+            <div class="col-md-6 cta-title" data-aos="fade-right" data-aos-duration="600"
               data-aos-easing="ease-in-sine">
               <p class="h1">O Espaço Feito
               <p class="h1">Para <span class="cta-primary">Você.</span></p>
@@ -81,7 +79,7 @@
               </p>
             </div>
             <div class="banner-cta">
-              <img class="img-cta img-fluid w-100 " src="assets/img/_home.jpg" alt="imagem">
+              <img class="col-md-12 img-cta img-fluid w-100 " src="./assets/img/home.jpg" alt="imagem">
               <button type="button" class="contato cta" href="#" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
                 data-aos-delay="200" data-aos-offset="0">Fale conosco</button>
             </div>
@@ -103,7 +101,8 @@
               <hr class="divisor">
             </div>
 
-            <div class="col-md-4">
+            <div data-aos="fade-right" data-aos-duration="1500"
+            data-aos-easing="ease-in-sine" class="col-xxl-4">
               <p class="text-description mt-5">O <span class="style-text">coworking</span> surgiu nos Estados Unidos, em
                 2005, quando o engenheiro de software Brad Neuberg criou uma comunidade de trabalho com os amigos. É um
                 conceito diferente de trabalho e que se expande a cada dia pelo mundo.
@@ -124,11 +123,19 @@
                 Em resumo, o coworking oferece um ambiente versátil, produtivo e com benefícios além do espaço físico.
               </p>
             </div>
-            <div class="col-md-8 galery-oq-img">
-              <img class="oq-img img-fluid" src="assets/img/oq-comp01.jpg" alt="">
-              <img class="oq-img img-fluid" src="assets/img/oq-recepcao.jpg" alt="">
-              <img class="oq-img img-fluid" src="assets/img/oq-reuniao04.jpg" alt="">
-              <img class="oq-img img-fluid" src="assets/img/oq-comp02.jpg" alt="">
+            <div class="col-xxl-8 col-sm-12 galery-oq-img">
+              <img data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="500" class="oq-img" src="assets/img/oq-comp01.jpg" alt="">
+              <img data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="500" class="oq-img " src="assets/img/oq-recepcao.jpg" alt="">
+              <img data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="500" class="oq-img " src="assets/img/oq-reuniao04.jpg" alt="">
+              <img data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="500" class="oq-img " src="assets/img/oq-comp02.jpg" alt="">
             </div>
           </div>
         </div>
@@ -148,46 +155,44 @@
         <div class="container mt-5 d-flex justify-content-center align-items-center ">
           <div class="row">
 
-            <div class="infra reuniao col-md-3 pe-5 ">
+            <div class="infra reuniao col-md-3">
               <p class="h5">Sala de Reunião</p>
               <img src="assets/icon/reuniao.svg" alt="">
-              <p class="text-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum sequi
+              <p class="text-description px-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum sequi
                 repellendus suscipit cumque incidunt, exercitationem nobis at alias non mollitia neque culpa laudantium
                 commodi omnis beatae odio, ex dolores sunt.</p>
-
             </div>
 
             <div class="infra wifi col-md-3">
               <p class="h5">Alta Velocidade</p>
               <img src="assets/icon/wifi.svg" alt="">
-              <p class="text-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum sequi
+              <p class="text-description px-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum sequi
                 repellendus suscipit cumque incidunt, exercitationem nobis at alias non mollitia neque culpa laudantium
                 commodi omnis beatae odio, ex dolores sunt.</p>
-
             </div>
-
 
             <div class="infra cozinha col-md-3">
               <p class="h5">Cafeteria</p>
               <img src="assets/icon/cafe.svg" alt="">
-              <p class="text-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum sequi
+              <p class="text-description px-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum sequi
                 repellendus suscipit cumque incidunt, exercitationem nobis at alias non mollitia neque culpa laudantium
                 commodi omnis beatae odio, ex dolores sunt.</p>
-
             </div>
 
-            <div class="infra eventos col-md-3 d-flex flex-column">
-              <p class="h5">Espaço para Eventos</p>
+            <div class="infra eventos col-md-3">
+              <p class="h5 ">Espaço para Eventos</p>
               <img class="img-fluid " src="assets/icon/eventos.svg" alt="">
-              <p class="text-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum incidunt,
+              <p class="text-description px-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum incidunt,
                 exercitationem nobis at alias non mollitia neque culpa laudantium commodi omnis beatae odio, ex dolores
                 sunt.</p>
-
             </div>
-
           </div>
         </div>
       </section>
+
+      <div class=" bg container-fluid p-0">
+        <img class="bg-gray " src="assets/img/bg-gray.jpg" alt="BG">
+      </div>
 
       <section class="section-Quatro-sobre">
         <div class="container">
@@ -199,7 +204,41 @@
             <hr class="divisor">
           </div>
 
+          <div id="carouselExampleIndicators" class="carousel slide container">
+            <div class="carousel-indicators">
+              
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+
+            <div class="carousel-inner container mt-5">
+              <div class="carousel-item active ">
+                <p class="d-block w-100 align-self-center" alt="...">“Os espaços da LocalCO oferecem um ambiente acolhedor e inspirador. Com decoração moderna, plantas e áreas comuns bem projetadas, você se sente motivado a trabalhar e interagir com outros profissionais.”</p>
+              </div>
+              <div class="carousel-item">
+                <p class="d-block w-100" alt="...">“A LocalCO proporcionam facilidades práticas, como estações de trabalho equipadas, internet rápida e salas de reunião. Além disso, oferece serviços como café, impressão e recepção, tornando o dia a dia mais conveniente.”</p>
+              </div>
+              <div class="carousel-item">
+                <p class="d-block w-100" alt="...">“A infraestrutura é de alta qualidade, com móveis ergonômicos, iluminação adequada e espaços bem climatizados. Isso contribui para a produtividade e o bem-estar dos clientes.”</p>
+              </div>
+              <div class="carousel-item">
+                <p class="d-block w-100" alt="...">“O networking é uma das maiores vantagens. Você conhece pessoas de diferentes áreas, troca experiências e até fecha parcerias. Os eventos e happy hours promovidos pela LocalCo são ótimas oportunidades para expandir sua rede de contatos.
+                  Em resumo, o local oferece um ambiente propício para o crescimento profissional, com vantagens que vão além do espaço físico.”</p>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
           
+        </div>
           <section class="section-cinco-blog">
 
             <div class="container">
@@ -212,15 +251,58 @@
                     a dia e ampliar suas redes de contatos. Desde dicas práticas para aumentar a produtividade até
                     histórias inspiradoras de networking em espaços compartilhados, você encontrará conteúdo relevante e
                     motivador. Vamos juntos nessa jornada de crescimento profissional!</p>
-
                 </div>
 
+                <div class="container mt-5">
+                  <div class="row row-1 row-cols-sm-2 row-cols-lg-3 gy-4">
 
+                    <div class="col">
+                      <div class="card h-100 shadow-lg">
+                        <img src="./assets/img/coworking.jpg" alt="image" class="rounded">
+                        <div class="card-body pb-3">
+                          <div class="d-flex align-content-center justify-content-between">
+                            <a href="blog.html" class="badge bg-secondary align-self-center p-2">Coworking</a>
+                            <data class="text-muted fst-italic small">Maio 09, 2024</data>
+                          </div>
+                          <p class="text-description fs-6 my-2"><strong>Como Coworkings Contribuem para a Produtividade Profissional</strong></p>
+                          <p class="text-description">Lorem ipsum dolor sit adipisicing elit. Eligendi vero dicta necessitatibus commodi similique corrupti culpa facere officia.</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col">
+                      <div class="card h-100 shadow-lg">
+                        <img src="./assets/img/networking1.jpg" alt="image" class="rounded">
+                        <div class="card-body pb-3">
+                          <div class="d-flex align-content-center justify-content-between">
+                            <a href="blog.html" class="badge bg-secondary align-self-center p-2">Networking</a>
+                            <data class="text-muted fst-italic small">Maio 09, 2024</data>
+                          </div>
+                          <p class="text-description fs-6 my-2">Networking em Coworking: Dicas e Estratégias</p>
+                          <p class="text-description">Lorem ipsum dolor sit adipisicing elit. Eligendi vero dicta necessitatibus commodi similique corrupti culpa facere officia.</p>
+                        </div>
+                      </div>
+                    </div>
 
+                    <div class="col">
+                      <div class="card h-100 shadow-lg">
+                        <img src="./assets/img/produtividade.jpg" alt="image" class="rounded">
+                        <div class="card-body pb-3">
+                          <div class="d-flex align-content-center justify-content-between">
+                            <a href="blog.html" class="badge bg-secondary align-self-center p-2">Produtividade</a>
+                            <data class="text-muted fst-italic small">Maio 09, 2024</data>
+                          </div>
+                          <p class="text-description fs-6 my-2"><strong>Seja Produtivo Trabalhando em Locais de Coworking</strong></p>
+                          <p class="text-description">Lorem ipsum dolor sit adipisicing elit. Eligendi vero dicta necessitatibus commodi
+                            similique corrupti culpa facere officia.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
           </section>
-
-
 
     </main>
   </div>
