@@ -334,19 +334,8 @@ body,
 }
 
 .oq-img {
-  height: 250px;
-  width: auto;
   border-radius: 24px;
   box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-/*Media Querry*/
-
-@media screen and (max-width: 1399px) {
-  .oq-img {
-    width: 45%;
-    height: auto;
-  }
 }
 
 /* Formatação da seção 03 - INFRA */
@@ -396,13 +385,23 @@ body,
 
 /* Formatação da seção 04 - SOBRE */
 
-.section-Quatro-sobre {
-
+#bg-gray {
+  width: 100%;
+  height: 900px;
+  position: absolute;
+  z-index: -10;
+  top: -90px;
 }
-.carrossel-color {
-  color: var(--color-primary) !important;
+
+#carouselExampleInterval {
+  height: 600px;
 }
 
+.carousel-item {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto!important;
+}
 
 /* Formatação da página O Nosso Espaço */
 
@@ -676,7 +675,7 @@ body,
 }
 
 .text-accent{
-  color: #fc6648;
+  color: var(--color-text);
 }
 
 .fs-500{
@@ -706,31 +705,31 @@ body,
 
 .plan:hover {
   transform: scale(1.1);
-  background-color: var(--color-bg);
+  background-color: var(--color-primary);
 }
 
 .plan--light{
   color: var(--color-text);
-  background: linear-gradient(-45s, #656565, #393e45);
+  background: linear-gradient(-45s, #393e45, #393e45);
 }
 
 .plan--light .plano-preco{
-  color: #fc6648;
+  color: var(--color-text);
 }
 
 .plan--light .btn{
   color: var(--color-bg);
-  background: var(--color-whatsapp);
+  background: var(--color-text);
 }
 
 .plan--accent{
-  color: #fc6648;
-  background: linear-gradient(-45s, #fc8971, #d94c30);
+  color: var(--color-text);
+  background: linear-gradient(-45s, #393e45, #393e45);
 }
 
 .plan--accent .btn{
   color: var(--color-bg);
-  background: #25D366;
+  background: var(--color-text);
 }
 
 .plan-title{
@@ -764,7 +763,7 @@ body,
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
-  color: #fc6648;
+  color: var(--color-text);
   transition: 0.3s;
 }
 
@@ -777,13 +776,13 @@ body,
 }
 
 .btn--light{
-  color: #fc8971;
-  background: #25D366;
+  color: var(--color-text);
+  background: var(--color-text);
 }
 
 .btn--dark{
-  color: #25D366;
-  background: #d94c30;
+  color: var(--color-text);
+  background: var(--color-text);
 }
 
 /* Formatação do Blog */
@@ -826,3 +825,5 @@ data {
   color: var(--color-text);
   font-family: 'Questrial', sans-serif;
 }
+
+/* FORMATAÇAO DO CONTATO 

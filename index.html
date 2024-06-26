@@ -133,7 +133,7 @@
       <section class="section-Dois-oque">
 
         <div class="container">
-          <div class="row mt-5">
+          <div class="row mt-5 p-0">
             <div class="title-section d-flex justify-content-center align-items-center flex-column">
               <p class="h3"><span>O QUE É</span></p>
               <p class="h2">O Coworking</p>
@@ -142,7 +142,7 @@
 
             
             <div data-aos="fade-right" data-aos-duration="1500"
-            data-aos-easing="ease-in-sine" class="col-sm-12 col-md-12 col-lg-4">
+            data-aos-easing="ease-in-sine" class="col-12 col-lg-4">
               <p class="text-description mt-5">O <span class="style-text">coworking</span> surgiu nos Estados Unidos, em
                 2005, quando o engenheiro de software Brad Neuberg criou uma comunidade de trabalho com os amigos. É um
                 conceito diferente de trabalho e que se expande a cada dia pelo mundo.
@@ -164,20 +164,35 @@
               </p>
             </div>
 
-            <div class="col-sm-12 col-md-12 col-lg-8 galery-oq-img ">
-              <img data-aos="flip-left"
-              data-aos-easing="ease-out-cubic"
-              data-aos-duration="500" class="img-fluid oq-img" src="assets/img/oq-comp01.jpg" alt="">
-              <img data-aos="flip-left"
-              data-aos-easing="ease-out-cubic"
-              data-aos-duration="500" class="img-fluid oq-img " src="assets/img/oq-recepcao.jpg" alt="">
-              <img data-aos="flip-left"
-              data-aos-easing="ease-out-cubic"
-              data-aos-duration="500" class="img-fluid oq-img " src="assets/img/oq-reuniao04.jpg" alt="">
-              <img data-aos="flip-left"
-              data-aos-easing="ease-out-cubic"
-              data-aos-duration="500" class="img-fluid oq-img " src="assets/img/oq-comp02.jpg" alt="">
+            <div class="col-12 col-lg-8 galery-oq-img ">
+              <div class="row">
+
+
+                <!-- <div class="col-12 col-md-6 col-lg-6"> -->
+                <div class="col-12 col-md-6 p-2 p-lg-4">
+                  <img data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="500" class=" oq-img overflow-hidden img-fluid w-100" src="assets/img/oq1.jpg" alt="">
+                </div>
+                <div class="col-12 col-md-6 p-2 p-lg-4 d-none d-lg-block">
+                  <img data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="500" class=" oq-img overflow-hidden img-fluid w-100" src="assets/img/oq2.jpg" alt="">
+                </div>
+                <div class="col-12 col-md-6 p-2 p-lg-4 d-none d-lg-block">
+                  <img data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="500" class=" oq-img overflow-hidden img-fluid w-100" src="assets/img/oq3.jpg" alt="">
+                  </div>
+                <div class="col-12 col-md-6 p-2 p-lg-4">
+                  <img data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="500" class=" oq-img overflow-hidden img-fluid w-100" src="assets/img/oq4.jpg" alt="">
+                </div>
+                
+              </div>
             </div>
+
 
           </div>
         </div>
@@ -190,7 +205,7 @@
             <p class="h3"><span>INFRAESTRUTURA</span></p>
             <p class="h2">Um espaço onde você queira ficar!</p>
             <hr class="divisor">
-            <p class="h4">Estrutura completa para você e seu negócio.</p>
+            <p class="h4 text-sm-center">Estrutura completa para você e seu negócio.</p>
           </div>
         </div>
 
@@ -233,7 +248,7 @@
       </section>
 
       <div class=" bg container-fluid p-0">
-        <img class="bg-gray " src="assets/img/bg-gray.jpg" alt="BG">
+        <img class="bg-gray dois" id="bg-gray" src="assets/img/bg-gray.jpg" alt="BG">
       </div>
 
       <section class="section-Quatro-sobre">
@@ -241,45 +256,42 @@
 
           <div class="title-section d-flex justify-content-center align-items-center flex-column mt-5">
 
-            <p class="h3 mt-5"><span>SOBRE A LOCALCO</span></p>
+            <p class="h3 "><span>SOBRE A LOCALCO</span></p>
             <p class="h2">O que nosos clientes estão dizendo</p>
             <hr class="divisor">
           </div>
 
-          <div id="carouselExampleIndicators" class="carousel slide container">
-            <div class="carousel-indicators">
-              
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            </div>
+          <div id="carouselExampleInterval" class="container carousel slide d-flex align-items-center" data-bs-ride="carousel">
+            <div class="carousel-inner d-flex align-content-center">
 
-            <div class="carousel-inner container mt-5">
-              <div class="carousel-item active ">
-                <p class="d-block w-100 align-self-center" alt="...">“Os espaços da LocalCO oferecem um ambiente acolhedor e inspirador. Com decoração moderna, plantas e áreas comuns bem projetadas, você se sente motivado a trabalhar e interagir com outros profissionais.”</p>
+              <div class=" carousel-item active" data-bs-interval="10000">
+                <p class="carossel-content w-100 " alt="...">“Os espaços da LocalCO oferecem um ambiente acolhedor e inspirador. Com decoração moderna, plantas e áreas comuns bem projetadas, você se sente motivado a trabalhar e interagir com outros profissionais.”</p>
               </div>
-              <div class="carousel-item">
-                <p class="d-block w-100" alt="...">“A LocalCO proporcionam facilidades práticas, como estações de trabalho equipadas, internet rápida e salas de reunião. Além disso, oferece serviços como café, impressão e recepção, tornando o dia a dia mais conveniente.”</p>
+
+              <div class=" carousel-item">
+                <p class="carossel-content w-100" alt="...">“A LocalCO proporcionam facilidades práticas, como estações de trabalho equipadas, internet rápida e salas de reunião. Além disso, oferece serviços como café, impressão e recepção, tornando o dia a dia mais conveniente.”</p>
               </div>
-              <div class="carousel-item">
-                <p class="d-block w-100" alt="...">“A infraestrutura é de alta qualidade, com móveis ergonômicos, iluminação adequada e espaços bem climatizados. Isso contribui para a produtividade e o bem-estar dos clientes.”</p>
+
+              <div class=" carousel-item">
+                <p class="carossel-content w-100" alt="...">“A infraestrutura é de alta qualidade, com móveis ergonômicos, iluminação adequada e espaços bem climatizados. Isso contribui para a produtividade e o bem-estar dos clientes.”</p>
               </div>
-              <div class="carousel-item">
-                <p class="d-block w-100" alt="...">“O networking é uma das maiores vantagens. Você conhece pessoas de diferentes áreas, troca experiências e até fecha parcerias. Os eventos e happy hours promovidos pela LocalCo são ótimas oportunidades para expandir sua rede de contatos.
+
+              <div class=" carousel-item">
+                <p class="carossel-content w-100" alt="...">“O networking é uma das maiores vantagens. Você conhece pessoas de diferentes áreas, troca experiências e até fecha parcerias. Os eventos e happy hours promovidos pela LocalCo são ótimas oportunidades para expandir sua rede de contatos.
                   Em resumo, o local oferece um ambiente propício para o crescimento profissional, com vantagens que vão além do espaço físico.”</p>
               </div>
+
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-          
+
         </div>
           <section class="section-cinco-blog">
 
@@ -314,7 +326,7 @@
                     
                     <div class="col">
                       <div class="card h-100 shadow-lg">
-                        <img src="./assets/img/networking1.jpg" alt="image" class="rounded">
+                        <img src="./assets/img/networking.jpg" alt="image" class="rounded">
                         <div class="card-body pb-3">
                           <div class="d-flex align-content-center justify-content-between">
                             <a href="./pages/post2-blog.html" target="_blank" class="badge bg-secondary align-self-center p-2">Networking</a>
