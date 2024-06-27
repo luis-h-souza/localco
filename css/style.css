@@ -403,6 +403,9 @@ body,
   margin: 0 auto!important;
 }
 
+
+
+
 /* Formatação da página O Nosso Espaço */
 
 .container-fluid {
@@ -413,7 +416,6 @@ body,
 .carousel{
   width: 100vw;
   height: 100vh;
-  margin-top: -10px !important;
   overflow: hidden;
   position: relative;
   opacity: 1;
@@ -826,4 +828,71 @@ data {
   font-family: 'Questrial', sans-serif;
 }
 
-/* FORMATAÇAO DO CONTATO 
+/* FORMATAÇAO DO CONTATO */
+
+h3 {
+  color: var(--color-text);
+}
+
+.icon-contato {
+  width: 50px;
+}
+
+.contato-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.contato-description {
+  font-size: 1.125rem;
+  color: var(--color-text);
+}
+
+.contato {
+  color: var(--color-bg);
+  border-radius: 12px 0;
+}
+
+.contato:hover {
+  background-image: linear-gradient(to left, #d94c30, #fc8971) !important;
+  border: var(--color-primary);
+}
+
+
+/* FORMATAÇÃO DO FOOTER */
+
+.footer {
+  background-image: url(../assets/img/bg-gray.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 8rem;
+}
+
+.text-footer-um {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-family: "Questrial", sans-serif;
+  font-weight: 700;
+}
+
+.text-footer {
+  font-family: "Questrial", sans-serif;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.item {
+  color: var(--color-primary);
+  transition: all 0.5s ease-in-out;
+}
+.item.insta:hover {
+  color: #dd2a7b;
+} 
+.item.face:hover{
+  color: #3b5988;
+}
+.item.x:hover{
+  color: white;
+}
