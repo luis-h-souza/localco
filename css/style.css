@@ -404,8 +404,6 @@ body,
 }
 
 
-
-
 /* Formatação da página O Nosso Espaço */
 
 .container-fluid {
@@ -830,8 +828,11 @@ data {
 
 /* FORMATAÇAO DO CONTATO */
 
+
+
 h3 {
   color: var(--color-text);
+  
 }
 
 .icon-contato {
@@ -865,8 +866,6 @@ h3 {
 .footer {
   background-image: url(../assets/img/bg-gray.jpg);
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 8rem;
 }
 
