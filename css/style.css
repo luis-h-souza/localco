@@ -363,7 +363,6 @@ body,
   font-weight: 700;
   color: var(--color-text);
   text-align: center;
-  
 }
 
 .infra, .text-description {
@@ -381,6 +380,12 @@ body,
 
 .infra, .oq-img:hover {
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 767px) {
+  .infra {
+    border-right: none
+  }
 }
 
 /* Formatação da seção 04 - SOBRE */
@@ -884,7 +889,7 @@ h3 {
 
 .item {
   color: var(--color-primary);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .item.insta:hover {
   color: #dd2a7b;
