@@ -41,8 +41,7 @@
             <div class="offcanvas offcanvas-end offcanvas-link" tabindex="-1" id="offcanvasNavbar"
               aria-labelledby="offcanvasNavbarLabel">
               <div class="offcanvas-header bg-navbar ">
-                <img src="./assets/img/Logo.svg" class="offcanvas-title w-50 d-none" id="offcanvasNavbarLabel">
-                <h5>LocalCo</h5></img>
+                <img src="./assets/img/Logo.svg" class="offcanvas-title w-25 " id="offcanvasNavbarLabel">    </img>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
               <div class="offcanvas-body bg-navbar">
@@ -67,7 +66,7 @@
               </div>
             </div>
 
-            <button class="contato whatsapp" href="#">
+            <button class="contato whatsapp d-sm-none d-md-none d-lg-block" href="#">
               <i class="bi bi-whatsapp  me-3"></i>Fale conosco</button>
 
           </div>
@@ -94,7 +93,7 @@
               </p>
             </div>
             <div class="banner-cta">
-              <img class="col-md-12 img-cta img-fluid w-100 " src="./assets/img/home.jpg" alt="imagem">
+              <img class="col-md-12 img-cta img-fluid w-100 " src="./assets/img/home.jpg" alt="imagem" loading="lazy">
               <button type="button" class="contato cta" href="#" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
                 data-aos-delay="200" data-aos-offset="0">Fale conosco</button>
             </div>
@@ -145,19 +144,19 @@
                 <!-- <div class="col-12 col-md-6 col-lg-6"> -->
                 <div class="col-12 col-md-6 p-2 p-lg-4">
                   <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500"
-                    class=" oq-img overflow-hidden img-fluid w-100" src="assets/img/oq1.jpg" alt="">
+                    class=" oq-img overflow-hidden img-fluid w-100" src="assets/img/oq1.jpg" alt="" loading="lazy">
                 </div>
-                <div class="col-12 col-md-6 p-2 p-lg-4 d-none d-lg-block">
+                <div class="col-12 col-md-6 p-2 p-lg-4 d-none d-lg-block ">
                   <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500"
-                    class=" oq-img overflow-hidden img-fluid w-100" src="assets/img/oq2.jpg" alt="">
+                    class=" oq-img overflow-hidden img-fluid w-100" src="assets/img/oq2.jpg" alt="" loading="lazy">
                 </div>
-                <div class="col-12 col-md-6 p-2 p-lg-4 d-none d-lg-block">
+                <div class="col-12 col-md-6 p-2 p-lg-4 d-none d-lg-block ">
                   <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500"
-                    class=" oq-img overflow-hidden img-fluid w-100" src="assets/img/oq3.jpg" alt="">
+                    class=" oq-img overflow-hidden img-fluid w-100" src="assets/img/oq3.jpg" alt="" loading="lazy">
                 </div>
                 <div class="col-12 col-md-6 p-2 p-lg-4">
                   <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500"
-                    class=" oq-img overflow-hidden img-fluid w-100" src="assets/img/oq4.jpg" alt="">
+                    class=" oq-img overflow-hidden img-fluid w-100" src="assets/img/oq4.jpg" alt="" loading="lazy">
                 </div>
               </div>
             </div>
@@ -278,12 +277,13 @@
       <section class="section-cinco-blog">
 
         <div class="container">
+
           <div class="row mt-5">
             <div class="title-section d-flex justify-content-center align-items-center flex-column">
               <p class="h3"><span>BLOG</span></p>
               <p class="h2">“Conectando Produtividade e Comunidade: Dicas e Insights”</p>
               <hr class="divisor">
-              <p class="h4">Neste blog, exploraremos temas essenciais para profissionais que buscam otimizar seu dia
+              <p class="h4 text-center">Neste blog, exploraremos temas essenciais para profissionais que buscam otimizar seu dia
                 a dia e ampliar suas redes de contatos. Desde dicas práticas para aumentar a produtividade até
                 histórias inspiradoras de networking em espaços compartilhados, você encontrará conteúdo relevante e
                 motivador. Vamos juntos nessa jornada de crescimento profissional!</p>
@@ -294,7 +294,7 @@
 
                 <div class="col">
                   <div class="card h-100 shadow-lg">
-                    <img src="./assets/img/coworking.jpg" alt="image" class="rounded">
+                    <img src="./assets/img/coworking.jpg" alt="image" class="rounded" loading="lazy">
                     <div class="card-body pb-3">
                       <div class="d-flex align-content-center justify-content-between">
                         <a href="./pages/post1-blog.html" target="_blank"
@@ -311,7 +311,7 @@
 
                 <div class="col">
                   <div class="card h-100 shadow-lg">
-                    <img src="./assets/img/networking.jpg" alt="image" class="rounded">
+                    <img src="./assets/img/networking.jpg" alt="image" class="rounded" loading="lazy">
                     <div class="card-body pb-3">
                       <div class="d-flex align-content-center justify-content-between">
                         <a href="./pages/post2-blog.html" target="_blank"
@@ -328,7 +328,7 @@
 
                 <div class="col">
                   <div class="card h-100 shadow-lg">
-                    <img src="./assets/img/produtividade.jpg" alt="image" class="rounded">
+                    <img src="./assets/img/produtividade.jpg" alt="image" class="rounded" loading="lazy">
                     <div class="card-body pb-3">
                       <div class="d-flex align-content-center justify-content-between">
                         <a href="./pages/post3-blog.html" target="_blank"
@@ -394,19 +394,28 @@
                   </div>
 
                   <div class="col-lg-6 my-3 ">
-                    <form>
+                    <form class="needs-validation" novalidate>
                       <div class="row border-dark shadow-lg py-3 ">
                         <div class="col-md-6">
                           <label for="name" class="contato-description form-label">Nome Completo</label>
-                          <input type="text" class="form-control form-control-lg" required>
+                          <input type="text" class="form-control form-control-lg" id="nome" required>
+                          <div class="invalid-feedback">
+                            Digite um nome válido!
+                          </div>
                         </div>
                         <div class="col-md-6">
                           <label for="email" class="contato-description form-label">E-mail</label>
-                          <input type="email" class="form-control form-control-lg" required>
+                          <input type="email" class="form-control form-control-lg" id="email" required>
+                          <div class="invalid-feedback">
+                            Digite um e-mail válido!
+                          </div>
                         </div>
                         <div class="col-12">
-                          <label for="" class="contato-description form-label">Mensagem</label>
-                          <textarea name="msg" id="msg" rows="4" class="form-control form-control-lg"></textarea>
+                          <label for="mensagem" class="contato-description form-label">Mensagem</label>
+                          <textarea name="msg" id="msg" rows="4" class="form-control form-control-lg" placeholder="Digite uma mensagem" required></textarea>
+                          <div class="invalid-feedback">
+                            Por favor, digite uma mensagem no campo!
+                          </div>                      
                         </div>
                         <div class="col-12">
                           <button type="submit" class="contato enviar bt btn-primary btn-lg w-100 p-1 mt-2 fw-bold rounded">Enviar<i
@@ -415,7 +424,6 @@
                       </div>
                     </form>
                   </div>
-
                 </div>
               </div>
       </section>
@@ -425,13 +433,13 @@
   <footer class="mt-5">
     <div class="container-fluid footer d-flex justify-content-center align-items-center">
       <p class="d-block text-center mb-0">
-        <span class="text-footer">Todos os direitos reservados</span>
-        <a href="#" class="text-footer-um">&copy; LOCALCO</a>
+        <span class="text-footer fs-6">Todos os direitos reservados</span>
+        <a href="#" class="fs-5 text-footer-um">&copy; LOCALCO</a>
       </p>
       <div class="item mx-lg-2 ps-3">
-        <a href="#"><i class="item insta bi bi-instagram"></i></a>
-        <a href="#"><i class="item face bi bi-facebook mx-lg-2"></i></a>
-        <a href="#"><i class="item x bi bi-twitter-x"></i></a>
+        <a href="#"><i class="fs-4 item insta bi bi-instagram"></i></a>
+        <a href="#"><i class="fs-4 item face bi bi-facebook mx-lg-2"></i></a>
+        <a href="#"><i class="fs-4 item x bi bi-twitter-x"></i></a>
       </div>
     </div>
   </footer>
@@ -450,7 +458,9 @@
     AOS.init();
   </script>
 
-  <script type="module" src="./js/main.js"></script>
+  <script type="module" src="js/main.js"></script>
+
+  <script src="./js/validacao.js"></script>
 </body>
 
 </html>
