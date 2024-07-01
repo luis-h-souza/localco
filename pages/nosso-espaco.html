@@ -124,10 +124,59 @@
                         <div class="name">Networking</div>
                         <div class="des">Secretária privativa em escritório partilhado, acesso 24 horas por dia, 7 dias por semana, inclui salas de conferências e reuniões, arquivo com fechadura, wifi rápido, compromissos de curto prazo 3 - 12 meses, opções corporativas flexíveis</div>
                         <div class="btn">
-                            <button>Confira</button>
-                            <button>Fale conosco</button>
+                          <button type="button" class="confira-espaco" data-bs-toggle="modal" data-bs-target="#exampleModal">Confira</button>
+                          <button>Fale conosco</button>
                         </div>
                     </div>
+                </div>
+
+                <!-- MODAL -->
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" id="modal">
+                    <div class="modal-content ">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Galeria de Fotos</h1>
+                        <div class="btn">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                      </div>
+                      <div class="modal-body">
+                        
+                        <!-- CARROSSEL -->
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true" id="carousel">
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          </div>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="../assets/img/compartilhada.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="../assets/img/oq4.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="../assets/img/oq-comp02.jpg" class="d-block w-100" alt="...">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <div class="item" style="background-image: url(../assets/img/reuniao.jpg);">

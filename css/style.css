@@ -665,6 +665,20 @@ body,
   }
 }
 
+
+#exampleModal {
+  width: 800px!important;
+  height: auto;
+  position: relative;
+}
+
+#carousel {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  width: 720px;
+}
+
 /* Formatação da página Nossos Planos */
 
 .titulo{
