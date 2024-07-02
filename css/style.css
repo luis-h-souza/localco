@@ -114,6 +114,11 @@ body,
   height: 80px;
 }
 
+.btn-close {
+  color: #fc6648;
+  
+}
+
 .nav-item{
   text-decoration: none;
   color: var(--color-text);
@@ -241,6 +246,12 @@ body,
   .h1, 
   .cta-primary {
     justify-self: center;
+  }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+  .nav-link{
+    font-size: 0.86rem;
   }
 }
 
@@ -670,18 +681,44 @@ body,
   }
 }
 
-
-#exampleModal {
-  width: 800px!important;
-  height: auto;
-  position: relative;
+.galeria_destaque {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  background-color: #333;
 }
 
-#carousel {
-  position: absolute;
-  top: 0;
-  right: 50%;
-  width: 720px;
+.galeria_destaque img {
+  width: 100%;
+}
+
+.arrow {
+  color: #d94c30;
+  width: 100px;
+  height: 100px;
+  align-self: center;
+  margin: 0 auto;
+  display: flex;
+}
+
+.galeria_miniaturas {
+display: flex;
+justify-content: center;
+}
+.galeria_miniaturas img {
+width: 30px;
+height: 2px;
+margin-inline: 8px;
+}
+.galeria_miniaturas img:hover {
+cursor: pointer; /* altera o cursor */
+overflow: hidden;
+}
+
+.btn.btn-secondary {
+  color: var(--color-bg);
+  background-color: var(--color-primary);
+  border: none;
 }
 
 /* Formatação da página Nossos Planos */
