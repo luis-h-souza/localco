@@ -30,6 +30,8 @@
   --color-text1: #94959c;
   --color-seta: #6565658a;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+  --bs-tooltip-bg: var(--color-primary);
+  --bs-tooltip-color: var(--color-bg);
 }
 
 /* Background */
@@ -37,6 +39,7 @@
 body,
 .navbar {
   background-color: var(--color-bg1) !important;
+  font-family: 'Poppins', sans-serif;
 }
 
 .bg {
@@ -171,22 +174,20 @@ body,
   border: var(--color-primary);
 }
 
-.contato.whatsapp {
+.contato.login {
   width: 170px;
   height: 40px;
   border-radius: 12px 0;
   color: var(--color-bg1);
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  font-size: 0.75rem;
-}
-
-.bi.bi-whatsapp {
   font-size: 1rem;
+  text-decoration: none;
+  letter-spacing: 1px;
 }
 
-.contato.whatsapp:hover {
-  background: var(--color-whatsapp)!important;
+.contato.login:hover {
+  background: var(--color-gradient)!important;
   border: solid 1px var(--color-bg)!important;
   transition: all 0.2s ease-out !important;
 }
@@ -322,6 +323,13 @@ body,
   }
 }
 
+.link_whatsapp {
+  position: fixed;
+  right: 20px;
+  bottom: 35px;
+  border: none;
+  background: transparent;
+}
 
 /* Formatação da Seção 02 - O QUE É */
 
@@ -589,8 +597,8 @@ body,
 
 .arrows{
   position: absolute;
-  top: 80%;
-  right: 52%;
+  top: 83%;
+  right: 30%;
   z-index: 100;
   width: 300px;
   max-width: 30%;
